@@ -30,8 +30,8 @@ Your project needs to be configured with your Auth0 Domain and Client ID for the
 Copy `src/auth.config.ts.example` into a new file in the same folder called `auth.config.ts`, and replace the values with your Auth0 application credentials:
 
 ```js
-export const domain = "dev-cbon33ssw5qzfg7u.us.auth0.com";
-export const clientId = "7c8AVm6JWJ6At20fyYZUlBfYNeYBrMfF";
+export const domain = "";
+export const clientId = 
 ```
 
 ### Configure the Auth0 Application
@@ -39,13 +39,13 @@ export const clientId = "7c8AVm6JWJ6At20fyYZUlBfYNeYBrMfF";
 If running on a mobile device, add the following to your **Allowed Callback URLs** settings:
 
 ```text
-com.auth0.samples://dev-cbon33ssw5qzfg7u.us.auth0.com/capacitor/com.auth0.samples/callback
+com.auth0.samples://???.us.auth0.com/capacitor/com.auth0.samples/callback
 ```
 
 If running on a mobile device, add the following to your **Allowed Logout URLs** settings:
 
 ```text
-com.auth0.samples://dev-cbon33ssw5qzfg7u.us.auth0.com/capacitor/com.auth0.samples/callback
+com.auth0.samples://???.us.auth0.com/capacitor/com.auth0.samples/callback
 ```
 
 If running on a mobile device, add the following to your **Allowed Origins (CORS)** settings:
