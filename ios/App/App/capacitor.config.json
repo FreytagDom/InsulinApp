@@ -1,5 +1,5 @@
 {
-	"appId": "com.auth0.samples",
+	"appId": "com.anonymous.insulinapp",
 	"appName": "InsulinApp",
 	"webDir": "build",
 	"plugins": {}
