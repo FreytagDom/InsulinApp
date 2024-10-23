@@ -30,7 +30,7 @@ export function UseInsulinData() {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5001/api/insulindata?userMail=${user.email}`)
+      fetch(`http://insulinapp-api.vercel.app/api/insulindata?userMail=${user.email}`)
         .then((response) => response.json())
         .then((insulinData) => setInsulinData(insulinData));
     }

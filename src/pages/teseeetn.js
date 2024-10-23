@@ -4,12 +4,12 @@ import Input from '../components/HomeInput/HomeInput';
 import DeleteUserDataButton from '../components/DeleteUserData/DeleteUserData';
 import InfoButton from '../components/InfoButton/InfoButton';
 import i18n from '../components/LanguageSwitcher/i18n';
-import {  useEffect, useState } from 'react';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from '../components/Login/Loggout';
 import LoginButton from '../components/Login/Login';
 import { domain as auth0Domain, clientId, callbackUri } from "./auth.config";
 import DataInjected from './savedInsulinData';
+import { useState } from 'react';
 
 export default function Home() {
   // const { data: session } = useSession();

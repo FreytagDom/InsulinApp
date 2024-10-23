@@ -11,7 +11,7 @@ export function UseCorrectionFactors() {
   useEffect(() => {
     async function fetchCorrectionFactors() {
       try {
-        const response = await axios.get('http://localhost:5001/correctionfactors');
+        const response = await axios.get('http://insulinapp-api.vercel.app/correctionfactors');
         setCorrectionFactors(response.data);
       } catch (err) {
         setError(err);
@@ -38,7 +38,7 @@ useEffect(() => {
 if (id) {
  Promise.all([
  
-   fetch(`http://localhost:5001/api/correctionfactors/${id}`).then((res) => res.json())
+   fetch(`http://insulinapp-api.vercel.app/api/correctionfactors/${id}`).then((res) => res.json())
  ]).then(([ correctionFactorData]) => {
 
    setCorrectionFactor(correctionFactorData);

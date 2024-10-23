@@ -55,9 +55,7 @@ const App: React.FC = () => {
       }
     });
   }, [handleRedirectCallback]);
-  // const elementStyle = {
-  //   zIndex: 10
-  // };
+
   return (
     <IonApp  style={{ 
       backgroundImage: `url(${happyBlooddrop})`,

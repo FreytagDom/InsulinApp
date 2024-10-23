@@ -3,11 +3,11 @@ import Input from '../components/HomeInput/HomeInput';
 import DeleteUserDataButton from '../components/DeleteUserData/DeleteUserData';
 import InfoButton from '../components/InfoButton/InfoButton';
 import i18n from '../components/LanguageSwitcher/i18n';
-import {  useEffect, useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from '../components/Login/Loggout';
 import LoginButton from '../components/Login/Login';
 import Header from '../components/Header/Header';
+import { useState } from 'react';
 
 export default function HomePage() {
   const { isAuthenticated, user } = useAuth0();

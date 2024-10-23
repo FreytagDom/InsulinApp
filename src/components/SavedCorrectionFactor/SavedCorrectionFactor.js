@@ -10,7 +10,7 @@ import {
 } from './SavedCorrectionFactorStyles';
 import { useTranslation } from 'react-i18next';
 import { useAuth0 } from '@auth0/auth0-react';
-import { UseCorrectionFactorById } from '../../pages/api/getCorrectionFactor';
+
 import { useEffect, useState } from 'react';
 
 export default function SavedCorrectionFactor() {

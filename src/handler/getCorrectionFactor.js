@@ -2,7 +2,7 @@
 // import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useAuth0 } from '@auth0/auth0-react';
-import axios from 'axios';
+
 import { useState, useEffect } from 'react';
 
 // Funktion, um alle Korrekturfaktoren zu laden
@@ -16,7 +16,7 @@ export function UseCorrectionFactors() {
     if (id) {
       Promise.all([
       
-        fetch(`http://localhost:5001/api/correctionfactors/${id}`).then((res) => res.json())
+        fetch(`http://insulinapp-api.vercel.app/api/correctionfactors/${id}`).then((res) => res.json())
       ]).then(([ correctionFactorData]) => {
      
         setCorrectionFactor(correctionFactorData);
