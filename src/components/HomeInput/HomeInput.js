@@ -402,8 +402,8 @@ export default function Input() {
     });
 
     form.reset();
+    console.log(response)
   }
-
   // Rest des Codes bleibt unverändert...
 
 

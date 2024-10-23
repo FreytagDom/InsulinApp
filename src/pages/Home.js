@@ -18,6 +18,7 @@ export default function HomePage() {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
+  console.log(handleChangeLanguage)
 
   return (
     <>

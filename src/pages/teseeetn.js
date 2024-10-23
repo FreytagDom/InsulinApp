@@ -21,6 +21,7 @@ export default function Home() {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
+  console.log(handleChangeLanguage)
 
 
   return (

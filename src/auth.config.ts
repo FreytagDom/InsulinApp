@@ -18,5 +18,5 @@ const iosOrAndroid = isPlatform('hybrid');
 export const callbackUri = iosOrAndroid
   ? `${appId}.auth0://${auth0Domain}/capacitor/${appId}/callback`
   : 
-  // 'https://insulinapp.de/callback'; 
-  'http://localhost:3000';
+  'https://insulinapp.de/callback'; 
+  // 'http://localhost:3000';
