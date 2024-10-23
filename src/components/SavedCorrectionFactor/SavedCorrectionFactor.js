@@ -23,7 +23,7 @@ export default function SavedCorrectionFactor() {
     // Daten von der API abrufen
     async function fetchData() {
       try {
-        const response = await fetch(`http://localhost:5001/api/correctionfactors/${user.email}`); // USER_ID durch die tatsächliche Benutzer-ID ersetzen
+        const response = await fetch(`https://localhost:5001/api/correctionfactors/${user.email}`); // USER_ID durch die tatsächliche Benutzer-ID ersetzen
         const data = await response.json();
         setCorrectionfactors(data); // Daten im State speichern
       } catch (error) {

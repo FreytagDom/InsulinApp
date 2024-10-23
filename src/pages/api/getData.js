@@ -1,5 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import axios from 'axios';
+// import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 // Funktion, um alle Insulindaten für den eingeloggten Benutzer zu laden
@@ -30,7 +30,7 @@ export function UseInsulinData() {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://insulinapp-api.vercel.app/api/insulindata?userMail=${user.email}`)
+      fetch(`https://insulinapp-api.vercel.app/api/insulindata?userMail=${user.email}`)
         .then((response) => response.json())
         .then((insulinData) => setInsulinData(insulinData));
     }

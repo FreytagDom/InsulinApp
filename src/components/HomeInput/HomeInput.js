@@ -393,7 +393,7 @@ export default function Input() {
       }),
     };
 
-    const response = await fetch('http://insulinapp-api.vercel.app/api/insulindata', {
+    const response = await fetch('https://insulinapp-api.vercel.app/api/insulindata', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

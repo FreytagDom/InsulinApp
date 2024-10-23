@@ -234,7 +234,7 @@ const InsulinFactor: React.FC = () => {
   // API-Aufruf, um die Insulinfaktoren beim Laden der Komponente abzurufen
   useEffect(() => {
     if (user) {
-      fetch(`http://insulinapp-api.vercel.app/api/daytimefactors/${user.email}`)
+      fetch(`https://insulinapp-api.vercel.app/api/daytimefactors/${user.email}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error('Fehler beim Abrufen der Daten');
@@ -255,7 +255,7 @@ const InsulinFactor: React.FC = () => {
     const userId = user?.email;
 
     try {
-      const response = await fetch(`http://insulinapp-api.vercel.app/api/daytimefactors/${userId}`, {
+      const response = await fetch(`https://insulinapp-api.vercel.app/api/daytimefactors/${userId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -265,7 +265,7 @@ const InsulinFactor: React.FC = () => {
 
       if (!response.ok) {
         // Falls PUT fehlschlägt, versuche POST
-        const postResponse = await fetch(`http://insulinapp-api.vercel.app/api/daytimefactors/${userId}`, {
+        const postResponse = await fetch(`https://insulinapp-api.vercel.app/api/daytimefactors/${userId}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -287,7 +287,7 @@ const InsulinFactor: React.FC = () => {
       });
 
       // Aktualisierte Daten abrufen und die Karte aktualisieren
-      const updatedResponse = await fetch(`http://insulinapp-api.vercel.app/api/daytimefactors/${userId}`);
+      const updatedResponse = await fetch(`https://insulinapp-api.vercel.app/api/daytimefactors/${userId}`);
       if (updatedResponse.ok) {
         const updatedData = await updatedResponse.json();
         setInsulinFactors(updatedData);

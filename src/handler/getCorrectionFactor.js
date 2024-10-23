@@ -16,7 +16,7 @@ export function UseCorrectionFactors() {
     if (id) {
       Promise.all([
       
-        fetch(`http://insulinapp-api.vercel.app/api/correctionfactors/${id}`).then((res) => res.json())
+        fetch(`https://insulinapp-api.vercel.app/api/correctionfactors/${id}`).then((res) => res.json())
       ]).then(([ correctionFactorData]) => {
      
         setCorrectionFactor(correctionFactorData);

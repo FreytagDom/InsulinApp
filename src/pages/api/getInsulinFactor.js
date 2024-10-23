@@ -11,7 +11,7 @@ export function UseInsulinFactors() {
   useEffect(() => {
     async function fetchCorrectionFactors() {
       try {
-        const response = await axios.get('http://insulinapp-api.vercel.app/dayTimeFactors');
+        const response = await axios.get('https://insulinapp-api.vercel.app/dayTimeFactors');
         setInsulinFactors(response.data);
       } catch (err) {
         setError(err);
@@ -38,7 +38,7 @@ useEffect(() => {
 if (id) {
  Promise.all([
  
-   fetch(`http://insulinapp-api.vercel.app/api/dayTimeFactors/${id}`).then((res) => res.json())
+   fetch(`https://insulinapp-api.vercel.app/api/dayTimeFactors/${id}`).then((res) => res.json())
  ]).then(([ insulinFactorData]) => {
 
   setInsulinFactor(insulinFactorData);

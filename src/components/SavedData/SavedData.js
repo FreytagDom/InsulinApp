@@ -36,7 +36,7 @@ export default function SavedDataInjected() {
   // API-Aufruf, um Benutzerdaten zu laden
   useEffect(() => {
     if (user) {
-      fetch(`http://insulinapp-api.vercel.app/api/insulindata?userMail=${user.email}`)
+      fetch(`https://insulinapp-api.vercel.app/api/insulindata?userMail=${user.email}`)
         .then((response) => response.json())
         .then((insulinData) => setData(insulinData));
     }
@@ -81,7 +81,7 @@ const removeSelectedCards = async () => {
     console.log('Deleting card with ID:', id);
 
     try {
-      const response = await fetch(`http://insulinapp-api.vercel.app/api/insulindata/${id}`, {
+      const response = await fetch(`https://insulinapp-api.vercel.app/api/insulindata/${id}`, {
         method: 'DELETE',
       });
 
