@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import Image from 'next/image';
 import { Img } from 'react-image';
 
 export const Label = styled.label`

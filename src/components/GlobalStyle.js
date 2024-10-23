@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { happyBlooddrop } from '../public/happyBlooddrop.png'
+
 
 
 export const GlobalStyle = createGlobalStyle`

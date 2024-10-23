@@ -22,7 +22,7 @@ import { useEffect, useState } from 'react';
 import UserDataToPdf from '../UserDataToPdf/UserDataToPdf';
 import { useTranslation } from 'react-i18next';
 import { useAuth0 } from '@auth0/auth0-react';
-import { UseInsulinData } from '../../pages/api/getData';
+
 
 export default function SavedDataInjected() {
 

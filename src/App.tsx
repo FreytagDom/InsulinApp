@@ -31,8 +31,6 @@ import DataInjected from "./pages/savedInsulinData";
 import PrivateRoute from "./components/PrivateRoute";
 import CorrectionFactorPage from "./pages/correctionFactor";
 import happyBlooddrop from './public/happyBlooddrop.png'
-import CreateFactor from "./pages/setInsulinFactor";
-import CorrectionFactor from "./components/SetCorrectionFactor/SetCorrectionFactor";
 import InsulinFactorPage from "./pages/insulinFactor";
 
 

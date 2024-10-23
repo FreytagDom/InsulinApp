@@ -1,7 +1,7 @@
 import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: "com.auth0.samples",
+  appId: "com.anonymous.insulinapp",
   appName: "InsulinApp",
   webDir: "build",
   plugins: {},

@@ -6,7 +6,6 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import { domain as auth0Domain, clientId, callbackUri } from "./auth.config";
-import { Navbar } from "./components/NavBar/NavBar";
 
 
 const root = createRoot(document.getElementById("root") as HTMLElement);

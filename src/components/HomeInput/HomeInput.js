@@ -262,7 +262,7 @@
 // }
 
 
-import { useState, Fragment, useEffect } from 'react';
+import { useState, Fragment } from 'react';
 import {
   EntryForm,
   LabelBz,
@@ -290,7 +290,6 @@ import blooddrop from '../../public/blooddrop.PNG';
 import carbohydrates from '../../public/carbohydrates.png';
 import donut from '../../public/donut.png';
 import handleInsulinUnit from '../../utils/calculate';
-import handelCorretion from '../../utils/handleCorrectionFactor';
 import { useAuth0 } from '@auth0/auth0-react';
 import { useTranslation } from 'react-i18next';
 import { UseCorrectionFactorById } from '../../pages/api/getCorrectionFactor';
